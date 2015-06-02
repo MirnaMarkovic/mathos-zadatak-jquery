@@ -1,0 +1,27 @@
+.container{
+	margin-bottom:20px;
+}
+.title{
+	text-align:center;
+	font-family:Georgia;
+}
+
+.naslov{
+	font-family:Georgia;
+	font-size:1.8em;
+	text-decoration: underline;
+	padding:10px;
+}
+.datum, .opis{
+	font-size:1.6em;
+}
+
+.done{
+	float:right;
+}
+
+#addNew{
+	margin:0 auto;
+    font-size:1.2em;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+  <meta charset="UTF-8">
+  <title>To do list</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+	<h1 class="page-header title">To do list</h1>
+	<div class="row jumbotron sortable" id="todo">
+		
+		<!-- mjesto za todo kartice-->
+		
+	</div>
+
+ <button class="btn btn-primary" id="addNew">Dodaj novi zadatak</button>
+
+ </div>
+
+
+ <div id="dialog" title="Novi zadatak">
+  <h3>Unesi novi zadatak</h3>
+  <form>
+    <input type="hidden" name="user" value="10">
+    <div class="form-group">
+      <label for="naslov">Zadatak:</label>
+      <input type="text" class="form-control" id="naslov" name="naslov" placeholder="Unesi naziv svog zadatka">
+      <label for="datum">Datum roka:</label>
+      <input type="text" id="datepicker" class="form-control" name="datum" placeholder="Odaberi datum roka">
+      <label fro="opis">Unesi opis zadatka:</label>
+      <textarea class="form-control" id="opis" name="opis"></textarea>
+    </div>
+    <button style="display:none" type="submit" class="btn btn-dafault">Submit</button>
+   </form>
+  </div>
+   
+  <div id="editDialog" title="Uredi zadatak">
+  <h3>Uređivanje zadatka</h3>
+  <form>
+    <input type="hidden" name="user" value="10">
+    <div class="form-group">
+      <label for="naslov">Zadatak:</label>
+      <input type="text" class="form-control" id="editnaslov" name="naslov" placeholder="Unesi naziv svog zadatka">
+      <label for="datum">Datum roka:</label>
+      <input type="text" id="edit-datepicker" class="form-control" name="datum" placeholder="Odaberi datum roka">
+      <label fro="opis">Opis zadatka:</label>
+      <textarea class="form-control" id="editopis" name="opis"></textarea>
+    </div>
+    <button style="display:none" type="submit" class="btn btn-dafault">Edit</button>
+   </form>
+  </div>
+
+  
+ <div id="deleteDialog" title="Brisanje">
+    <h4 class="delete-confirm">Jeste li sigurni da želite obrisati zadatak</h4>
+    <button style="display:none" type="submit" class="btn btn-dafault">Delete</button>
+  </div>
+
+	<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
